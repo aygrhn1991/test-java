@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script charset="utf-8" src="/plugin/kindeditor/kindeditor-all.js"></script>
+    <script charset="utf-8" src="/plugin/kindeditor/lang/zh-CN.js"></script>
+    <script>
+        KindEditor.ready(function (K) {
+            var options = {
+                uploadJson: '/uploader/upload',
+                fileManagerJson: '/uploader/fileManager',
+                allowFileManager: true,
+                filterMode: true
+            };
+            var editor = K.create('#editor_id', options);
+        });
+    </script>
+</head>
+<body>
+<textarea id="editor_id" style="width:700px;height:300px;"></textarea>
+</body>
+</html>
